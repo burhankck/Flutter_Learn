@@ -1,13 +1,11 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-class LoadingBars extends StatelessWidget    {
+class LoadingBars extends StatelessWidget {
   const LoadingBars({super.key});
 
   @override
-  Widget build(BuildContext context)  {
+  Widget build(BuildContext context) {
     return loadingBarOne();
   }
 }
@@ -19,11 +17,9 @@ class loadingBarOne extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const 
-    SpinKitCubeGrid(
-      color: Colors.white,
+    return const SpinKitCubeGrid(
+      color: Colors.blue,
       size: 50.0,
-      
     );
   }
 }

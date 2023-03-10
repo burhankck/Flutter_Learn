@@ -12,7 +12,7 @@ class ServiceLearn extends StatefulWidget {
 }
 
 class _ServiceLearnState extends State<ServiceLearn> {
-  List<newModel>? _items;
+  List<NewModels>? _items;
   String? name;
   bool _isLoading = false;
 
@@ -38,7 +38,7 @@ class _ServiceLearnState extends State<ServiceLearn> {
       final _datas = response.data;
       if (_datas is List) {
         setState(() {
-          _items = _datas.map((e) => newModel.fromJson(e)).toList();
+          _items = _datas.map((e) => NewModels.fromJson(e)).toList();
         });
       }
     }
@@ -103,7 +103,7 @@ class _postCard extends StatelessWidget {
     this.model,
   }) : super(key: key);
 
-  final newModel? model;
+  final NewModels? model;
 
   @override
   Widget build(BuildContext context) {

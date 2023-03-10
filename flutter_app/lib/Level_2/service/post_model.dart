@@ -1,4 +1,4 @@
-class newModel {
+class NewModels {
   int? userId;
   int? id;
   String? title;
@@ -7,9 +7,9 @@ class newModel {
   // BURAYA KOD YAZILMAZ !!!!
 
  // Servisten data geliyorsa her zaman gelmeyebilir,  Null olmalı.
-  newModel({this.userId, this.id, this.title, this.body});
+  NewModels({this.userId, this.id, this.title, this.body});
 
-  newModel.fromJson(Map<String, dynamic> json) {
+  NewModels.fromJson(Map<String, dynamic> json) {
     userId = json['userId'];
     id = json['id'];
     title = json['title'];
